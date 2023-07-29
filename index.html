@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link href="https://fonts.cdnfonts.com/css/geometria" rel="stylesheet">
+
+    <title>Preguntas Frecuentes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Preguntas Frecuentes</h1>
+    </header>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+        <div class="faq-item">
+            <div class="question plus-minus-toggle">¿Pregunta?</div>
+            <div class="answer">Respuesta</div>
+        </div>
+    </div>
+
+    <script>
+        const questionElements = document.querySelectorAll('.question');
+
+        questionElements.forEach((questionElement) => {
+            questionElement.addEventListener('click', () => {
+                const answerElement = questionElement.nextElementSibling;
+                answerElement.classList.toggle('show');
+
+                questionElement.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

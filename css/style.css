@@ -1,0 +1,65 @@
+body {
+    font-family: 'Geometria', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    color: rgb(15, 25, 30);
+    text-align: center;
+    padding: 1rem;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -.5px;
+}
+
+.logo {
+    max-width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 24px;
+    letter-spacing: -.1px;
+    color: inherit;
+}
+
+.question:hover {
+    color: rgb(5, 190, 80);
+}
+
+.answer {
+    display: none;
+    margin-top: 0.5rem;
+    font-size: 16px;
+}
+
+.answer.show {
+    display: block;
+}
+
+.plus-minus-toggle::after {
+    content: "+";
+    float: right;
+    font-weight: bold;
+}
+
+.plus-minus-toggle.active::after {
+    content: "-";
+}
